@@ -6,7 +6,8 @@ use App\Repository\DepartmentRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 /**
  * @ORM\Entity(repositoryClass=DepartmentRepository::class)
  */
@@ -31,6 +32,7 @@ class Department
     private $id_region;
 
     /**
+     * @ApiSubresource
      * @ORM\OneToMany(targetEntity=City::class, mappedBy="id_department")
      */
     private $cities;

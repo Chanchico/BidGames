@@ -18,3 +18,15 @@
 /phpunit.xml
 .phpunit.result.cache
 ###< phpunit/phpunit ###
+.dockerignore
+Dockerfile
+migrations/Version20211203084726.php
+migrations/Version20211203084734.php
+migrations/Version20211203084742.php
+migrations/Version20211203100033.php
+migrations/Version20211203101115.php
+migrations/Version20211203101120.php
+.env
+.env
+.env
+migrations/Version20211203095842.php
