@@ -4,20 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c256e137-e7a6-4cee-b15c-106995c423df" name="Default Changelist" comment="bdd">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/bidGames.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bidGames.iml" afterDir="false" />
+=======
+    <list default="true" id="c256e137-e7a6-4cee-b15c-106995c423df" name="Default Changelist" comment="jsp">
+>>>>>>> origin/frontAdvanced
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" beforeDir="false" />
+=======
+>>>>>>> origin/frontAdvanced
       <change beforePath="$PROJECT_DIR$/migrations/Version20211202210114.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/Version20211203102127.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/Version20211203171719.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/Version20211203171842.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/migrations/Version20211203212613.php" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Users/ProductCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Users/ProductCrudController.php" afterDir="false" />
@@ -35,6 +43,16 @@
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Users/ProductCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Users/ProductCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/dashboard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/dashboard.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/dashboard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/dashboard.html.twig" afterDir="false" />
+>>>>>>> origin/frontAdvanced
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +66,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="master" />
+=======
+        <entry key="$PROJECT_DIR$" value="alaa" />
+>>>>>>> origin/frontAdvanced
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -221,7 +243,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../squid" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -247,15 +269,37 @@
       <workItem from="1638474325791" duration="11315000" />
       <workItem from="1638515899276" duration="61292000" />
       <workItem from="1638744125131" duration="3582000" />
+<<<<<<< HEAD
       <workItem from="1638774798241" duration="19142000" />
       <workItem from="1638861583047" duration="1905000" />
       <workItem from="1638863973812" duration="6062000" />
       <workItem from="1638871585996" duration="8200000" />
+=======
+      <workItem from="1638774798241" duration="1266000" />
+      <workItem from="1638780066252" duration="7648000" />
+      <workItem from="1638879064336" duration="2666000" />
+      <workItem from="1638881817618" duration="3829000" />
+      <workItem from="1638885919152" duration="986000" />
+      <workItem from="1638886943609" duration="24000" />
+      <workItem from="1638886970275" duration="2304000" />
+      <workItem from="1638889605595" duration="354000" />
+>>>>>>> origin/frontAdvanced
     </task>
+    <task id="LOCAL-00001" summary="jsp">
+      <created>1638889862980</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638889862980</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -282,7 +326,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="bdd" />
     <option name="LAST_COMMIT_MESSAGE" value="bdd" />
+=======
+    <MESSAGE value="jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="jsp" />
+>>>>>>> origin/frontAdvanced
   </component>
 </project>

@@ -8,13 +8,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class HomeController extends AbstractController
+class AllBidsController extends AbstractController
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/allbids", name="bids")
      */
-    public function home()
+    public function home(BidRepository $bidRepository): Response
     {
-        return $this->render('home/home.html.twig');
+        return $this->render('home/allbids.html.twig', [
+            'bid' => $bidRepository->findAll(),
+        ]);
     }
 }
