@@ -31,6 +31,7 @@ class ProductCrudController extends AbstractCrudController
             AssociationField::new('id_sets', 'ID du lot'),
             AssociationField::new('id_type', "Type du produit"),
             AssociationField::new('bid', "ID de l'enchère"),
+            TextField::new('image', 'Photo du produit'),
             TextField::new('name', 'Nom du produit'),
             TextareaField::new('description', 'Description'),
             TextField::new('state', 'Arrondissement'),
