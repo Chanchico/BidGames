@@ -4,8 +4,8 @@ namespace App\Entity;
 
 use App\Repository\ProductRepository;
 use Doctrine\ORM\Mapping as ORM;
-
-
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 
 /**
  * @ORM\Entity(repositoryClass=ProductRepository::class)
@@ -29,10 +29,7 @@ class Product
      */
     private $description;
 
-    /**
-     * @ORM\Column(type="string", length=50)
-     */
-    private $state;
+
 
     /**
      * @ORM\Column(type="decimal", precision=15, scale=2)
@@ -63,10 +60,12 @@ class Product
     private $id_type;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Bid::class, inversedBy="id_product")
+     * @ORM\ManyToOne(targetEntity=Status::class, inversedBy="products")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $bid;
+    private $id_status;
+
+
 
     public function getId(): ?int
     {
@@ -97,17 +96,6 @@ class Product
         return $this;
     }
 
-    public function getState(): ?string
-    {
-        return $this->state;
-    }
-
-    public function setState(string $state): self
-    {
-        $this->state = $state;
-
-        return $this;
-    }
 
     public function getEstimatePrice(): ?string
     {
@@ -169,14 +157,14 @@ class Product
         return $this;
     }
 
-    public function getBid(): ?Bid
+    public function getIdStatus(): ?Status
     {
-        return $this->bid;
+        return $this->id_status;
     }
 
-    public function setBid(?Bid $bid): self
+    public function setIdStatus(?Status $id_status): self
     {
-        $this->bid = $bid;
+        $this->id_status = $id_status;
 
         return $this;
     }
