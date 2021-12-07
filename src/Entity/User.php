@@ -215,7 +215,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setLicence(int $licence): self
     {
         $this->licence = $licence;
-
         return $this;
     }
 
