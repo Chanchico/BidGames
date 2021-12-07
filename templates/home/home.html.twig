@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            margin: 30px 0 10px 0;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 50px;
+            font-size: 24px;
+        }
+
+        .fond {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: url('../public/assets/media/hero-bg.jpg') repeat fixed 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-get-started {
+            font-family: "Poppins", sans-serif;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 8px 28px;
+            border-radius: 50px;
+            transition: 0.5s;
+            margin: 10px;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .btn-get-started:hover {
+            text-decoration: none;
+            color: #0c4a6e;
+            border-color: papayawhip;
+            background-color: papayawhip;
+        }
+    </style>
+    <div class="fond">
+        <h1>Bienvenue sur BidGames</h1>
+        <h2>Nous sommes une petite platforme d'enchère en ligne accessible à tous</h2>
+        <a href="{{ path('bids') }}" class="btn-get-started">C'est parti</a>
+    </div>
+{% endblock %}

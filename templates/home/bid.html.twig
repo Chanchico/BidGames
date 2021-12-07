@@ -1,0 +1,43 @@
+{% extends "base.html.twig" %}
+
+{% block navbar %}
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <a href="{{ path('home') }}" class="navbar-brand">
+            BidGames
+        </a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <a href="{{ path('app_register') }}" class="navbar-brand">
+            Sign in
+        </a>
+    </nav>
+{% endblock %}
+
+{% block body %}
+
+    <h1>Ceci est la page de l'enchere</h1>
+
+    <section>
+        {% for set in sets %}
+            <h2>{{ set.address }}</h2>
+            <p>oui</p>
+        {% endfor %}
+        {% for product in products %}
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+        {% endfor %}
+        <div class="metadata">Enchere créée le 12</div>
+        <div class="content">
+            <img src="https://via.placeholder.com/200x150" alt="">
+            <p>10 mille balles</p>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat.
+
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+
+                Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Cras ultricies ligula sed magna dictum porta. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</p>
+        </div>
+    </section>
+
+{% endblock %}

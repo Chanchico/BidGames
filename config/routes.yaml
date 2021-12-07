@@ -1,3 +1,20 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+cities_list:
+  path: /api/cities
+  controller: App\Controller\DepartmentController:indexAction
+  methods: [GET]
+
+cities_create:
+  path: /api/cities
+  controller: App\Controller\DepartmentController:createAction
+  methods: [POST]
+
+product_list:
+  path: /api/v1/products
+  controller: App\Controller\ProductController:indexAction
+  methods: [GET]
+
+product_create:
+  path: /api/v1/products
+  controller: App\Controller\ProductController:createAction
+  methods: [POST]
+
