@@ -2,6 +2,7 @@
 
 namespace App\Controller\Users;
 
+use App\Entity\Bid;
 use App\Entity\Product;
 use App\Entity\Sets;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
@@ -32,5 +33,7 @@ class UserDashboardController extends AbstractDashboardController
         yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Produits', 'fab fa-product-hunt', Product::class);
         yield MenuItem::linkToCrud('Lots', 'fas fa-box-open', Sets::class);
+        yield MenuItem::linkToCrud('Enchères', 'fas fa-box-open', Bid::class);
+
     }
 }

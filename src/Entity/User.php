@@ -7,6 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
@@ -63,6 +65,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $licence;
 
     /**
+     * @ApiSubresource
      * @ORM\ManyToOne(targetEntity=City::class, inversedBy="user")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -242,8 +245,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
-
-
 
     public function __toString(): string
     {

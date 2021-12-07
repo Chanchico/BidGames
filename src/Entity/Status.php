@@ -2,15 +2,16 @@
 
 namespace App\Entity;
 
-use App\Repository\CategoryRepository;
+use App\Repository\StatusRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 /**
- * @ORM\Entity(repositoryClass=CategoryRepository::class)
+ * @ORM\Entity(repositoryClass=StatusRepository::class)
  */
-class Category
+class Status
 {
     /**
      * @ORM\Id
@@ -25,13 +26,13 @@ class Category
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity=Bid::class, mappedBy="id_category")
+     * @ORM\OneToMany(targetEntity=Product::class, mappedBy="id_status")
      */
-    private $bids;
+    private $products;
 
     public function __construct()
     {
-        $this->bids = new ArrayCollection();
+        $this->products = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -52,29 +53,29 @@ class Category
     }
 
     /**
-     * @return Collection|Bid[]
+     * @return Collection|Product[]
      */
-    public function getBids(): Collection
+    public function getProducts(): Collection
     {
-        return $this->bids;
+        return $this->products;
     }
 
-    public function addBid(Bid $bid): self
+    public function addProduct(Product $product): self
     {
-        if (!$this->bids->contains($bid)) {
-            $this->bids[] = $bid;
-            $bid->setIdCategory($this);
+        if (!$this->products->contains($product)) {
+            $this->products[] = $product;
+            $product->setIdStatus($this);
         }
 
         return $this;
     }
 
-    public function removeBid(Bid $bid): self
+    public function removeProduct(Product $product): self
     {
-        if ($this->bids->removeElement($bid)) {
+        if ($this->products->removeElement($product)) {
             // set the owning side to null (unless already changed)
-            if ($bid->getIdCategory() === $this) {
-                $bid->setIdCategory(null);
+            if ($product->getIdStatus() === $this) {
+                $product->setIdStatus(null);
             }
         }
 

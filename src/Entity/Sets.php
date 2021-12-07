@@ -6,7 +6,8 @@ use App\Repository\SetsRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 /**
  * @ORM\Entity(repositoryClass=SetsRepository::class)
  */
@@ -24,10 +25,6 @@ class Sets
      */
     private $launch_date;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $is_published;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -35,6 +32,7 @@ class Sets
     private $address;
 
     /**
+     * @ApiSubresource
      * @ORM\ManyToOne(targetEntity=City::class, inversedBy="sets")
      * @ORM\JoinColumn(nullable=false)
      */
@@ -55,6 +53,11 @@ class Sets
      * @ORM\OneToMany(targetEntity=Product::class, mappedBy="id_sets")
      */
     private $products;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Bid::class, inversedBy="sets")
+     */
+    private $id_bid;
 
     public function __construct()
     {
@@ -79,17 +82,7 @@ class Sets
         return $this;
     }
 
-    public function getIsPublished(): ?bool
-    {
-        return $this->is_published;
-    }
 
-    public function setIsPublished(bool $is_published): self
-    {
-        $this->is_published = $is_published;
-
-        return $this;
-    }
 
     public function getAddress(): ?string
     {
@@ -184,4 +177,17 @@ class Sets
     {
         return (string) $this->id;
     }
+
+    public function getIdBid(): ?Bid
+    {
+        return $this->id_bid;
+    }
+
+    public function setIdBid(?Bid $id_bid): self
+    {
+        $this->id_bid = $id_bid;
+
+        return $this;
+    }
+
 }

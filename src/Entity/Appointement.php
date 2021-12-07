@@ -4,7 +4,9 @@ namespace App\Entity;
 
 use App\Repository\AppointementRepository;
 use Doctrine\ORM\Mapping as ORM;
-
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * @ORM\Entity(repositoryClass=AppointementRepository::class)
  */

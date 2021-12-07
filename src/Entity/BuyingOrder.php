@@ -4,7 +4,8 @@ namespace App\Entity;
 
 use App\Repository\BuyingOrderRepository;
 use Doctrine\ORM\Mapping as ORM;
-
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 /**
  * @ORM\Entity(repositoryClass=BuyingOrderRepository::class)
  */
