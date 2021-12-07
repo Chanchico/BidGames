@@ -6,6 +6,7 @@ use App\Entity\Category;
 use App\Entity\City;
 use App\Entity\Department;
 use App\Entity\Region;
+use App\Entity\Status;
 use App\Entity\Type;
 use App\Entity\User;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
@@ -39,5 +40,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Villes', 'fas fa-city', City::class);
         yield MenuItem::linkToCrud('Types de produits', 'fas fa-sliders-h', Type::class);
         yield MenuItem::linkToCrud('Catégories enchères','fab fa-ideal', Category::class);
+        yield MenuItem::linkToCrud('Etats de produits','fab fa-ideal', Status::class);
+
     }
 }
